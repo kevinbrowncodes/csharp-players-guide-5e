@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolasAndTelim", "ConsolasAndTelim\ConsolasAndTelim.csproj", "{84F19BD0-29F1-4C81-8D54-A932EAB1BE57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84F19BD0-29F1-4C81-8D54-A932EAB1BE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F19BD0-29F1-4C81-8D54-A932EAB1BE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F19BD0-29F1-4C81-8D54-A932EAB1BE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F19BD0-29F1-4C81-8D54-A932EAB1BE57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08C8217D-CF89-4754-92D7-4D0A4ED480B2}
+	EndGlobalSection
+EndGlobal
