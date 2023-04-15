@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VinFletchersArrow", "VinFletchersArrow\VinFletchersArrow.csproj", "{0A670EB3-01D6-4883-BD2F-128ED3DB9822}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A670EB3-01D6-4883-BD2F-128ED3DB9822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A670EB3-01D6-4883-BD2F-128ED3DB9822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A670EB3-01D6-4883-BD2F-128ED3DB9822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A670EB3-01D6-4883-BD2F-128ED3DB9822}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F21B571-EAE2-4E3E-93B7-F510A8BFA1B3}
+	EndGlobalSection
+EndGlobal
