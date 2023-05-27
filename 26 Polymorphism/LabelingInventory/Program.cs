@@ -1,15 +1,16 @@
-﻿namespace PackingInventory
+﻿namespace LabelingInventory
 {
     internal class Program
-    {          
-        /* Add properties to the Pack that allow it to report the current item count, weight, and volume, and the limits of each */
-        /* Create a program that creates a new pack and then allow the user to add (or attempt to add) items chosen from a menu */
+    {   
         static void Main(string[] args)
         {
             string itemInput;
             InventoryItem inventoryItem;
 
             Pack pack = new Pack(10, 20, 30);
+
+            Arrow arrow2 = new Arrow();
+            Console.WriteLine(arrow2.ToString());
 
             while (!pack.Full)
             {
@@ -21,31 +22,39 @@
                 Console.WriteLine("\nWhat do you want to pack?");
                 Console.WriteLine("SELECTION\tITEM\tWEIGHT\tVolume");
                 Console.WriteLine("1\t\tarrow\t0.1\t0.05");
-                Console.WriteLine("2\t\tbow");
-                Console.WriteLine("3\t\trope");
-                Console.WriteLine("4\t\twater");
-                Console.WriteLine("5\t\tfood");
-                Console.WriteLine("6\t\tsword");
+                Console.WriteLine("2\t\tbow\t1\t4");
+                Console.WriteLine("3\t\trope\t1\t1.5");
+                Console.WriteLine("4\t\twater\t2\t3");
+                Console.WriteLine("5\t\tfood\t1\t0.5");
+                Console.WriteLine("6\t\tsword\t5\t3");
                 itemInput = Console.ReadLine();
+
+                /* Override the existing ToString method (from the obejct base class) on all of your inventory item subclasses to give them a name. For example, new Rope().ToString() should return "Rope". */
                 switch (itemInput)
                 {
                     case "1":
                         inventoryItem = new Arrow();
+                        Console.WriteLine($"\nYou selected " + inventoryItem.ToString());
                         break;
                     case "2":
                         inventoryItem = new Bow();
+                        Console.WriteLine($"\nYou selected " + inventoryItem.ToString());
                         break;
                     case "3":
                         inventoryItem = new Rope();
+                        Console.WriteLine($"\nYou selected " + inventoryItem.ToString());
                         break;
                     case "4":
                         inventoryItem = new Water();
+                        Console.WriteLine($"\nYou selected " + inventoryItem.ToString());
                         break;
                     case "5":
                         inventoryItem = new Food();
+                        Console.WriteLine($"\nYou selected " + inventoryItem.ToString());
                         break;
                     case "6":
                         inventoryItem = new Sword();
+                        Console.WriteLine($"\nYou selected " + inventoryItem.ToString());
                         break;
                     default:
                         inventoryItem = new InventoryItem();
@@ -53,6 +62,9 @@
                 }
 
                 pack.Add(inventoryItem);
+
+                /* Before the user chooses the next item to add, display the pack's current contents via its new ToString method. */
+                Console.WriteLine(pack.ToString());
             }
             
         }

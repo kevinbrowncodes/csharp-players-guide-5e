@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PackingInventory
+namespace LabelingInventory
 {
     public class Food : InventoryItem
     {
@@ -12,6 +12,11 @@ namespace PackingInventory
         {
             Weight = 1F;
             Volume = 0.5F;
+        }
+
+        public override string ToString()
+        {
+            return "food";
         }
     }
 }
